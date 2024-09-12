@@ -1,0 +1,33 @@
+SBY 12:26:19 [bitwise_task1] Removing directory '/home/eyl47/c2s2_2024/sp24demo/bitwise/bitwise_task1'.
+SBY 12:26:19 [bitwise_task1] Copy '/home/eyl47/c2s2_2024/sp24demo/bitwise/bitwise.v' to '/home/eyl47/c2s2_2024/sp24demo/bitwise/bitwise_task1/src/bitwise.v'.
+SBY 12:26:19 [bitwise_task1] engine_0: smtbmc
+SBY 12:26:19 [bitwise_task1] base: starting process "cd bitwise_task1/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 12:26:19 [bitwise_task1] base: bitwise.v:44: Warning: Identifier `\false' is implicitly declared.
+SBY 12:26:19 [bitwise_task1] base: Warning: Wire bitwise.\false is used but has no driver.
+SBY 12:26:19 [bitwise_task1] base: finished (returncode=0)
+SBY 12:26:19 [bitwise_task1] prep: starting process "cd bitwise_task1/model; yosys -ql design_prep.log design_prep.ys"
+SBY 12:26:19 [bitwise_task1] prep: Warning: Wire bitwise.\false is used but has no driver.
+SBY 12:26:19 [bitwise_task1] prep: finished (returncode=0)
+SBY 12:26:19 [bitwise_task1] smt2: starting process "cd bitwise_task1/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 12:26:19 [bitwise_task1] smt2: finished (returncode=0)
+SBY 12:26:19 [bitwise_task1] engine_0: starting process "cd bitwise_task1; yosys-smtbmc --presat --unroll --noprogress -t 100  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Solver: yices
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  BMC failed!
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Assert failed in bitwise: bitwise.v:47.19-48.43 ($assert$bitwise.v:47$39)
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 12:26:20 [bitwise_task1] engine_0: ##   0:00:00  Status: failed
+SBY 12:26:20 [bitwise_task1] engine_0: finished (returncode=1)
+SBY 12:26:20 [bitwise_task1] engine_0: Status returned by engine: FAIL
+SBY 12:26:20 [bitwise_task1] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 12:26:20 [bitwise_task1] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 12:26:20 [bitwise_task1] summary: engine_0 (smtbmc) returned FAIL
+SBY 12:26:20 [bitwise_task1] summary: counterexample trace: bitwise_task1/engine_0/trace.vcd
+SBY 12:26:20 [bitwise_task1] summary:   failed assertion bitwise.$assert$bitwise.v:47$39 at bitwise.v:47.19-48.43 in step 1
+SBY 12:26:20 [bitwise_task1] DONE (FAIL, rc=2)

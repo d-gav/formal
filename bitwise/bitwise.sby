@@ -1,0 +1,21 @@
+[tasks]
+task1
+
+[options]
+
+task1: mode bmc
+task1: depth 100
+
+[engines]
+
+task1: smtbmc
+
+[script]
+
+read -formal bitwise.v
+prep -top bitwise
+
+
+[files]
+
+bitwise.v

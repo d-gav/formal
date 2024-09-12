@@ -1,0 +1,18 @@
+[options]
+
+mode bmc
+depth 100
+
+[engines]
+
+smtbmc
+
+[script]
+
+read -formal bitwise.v
+prep -top bitwise
+
+
+[files]
+
+bitwise.v

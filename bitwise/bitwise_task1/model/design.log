@@ -1,0 +1,297 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33+67 (git sha1 076c5ceb7, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: bitwise.v
+Parsing formal SystemVerilog input from `bitwise.v' to AST representation.
+Storing AST representation for module `$abstract\bitwise'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\bitwise'.
+Generating RTLIL representation for module `\bitwise'.
+bitwise.v:44: Warning: Identifier `\false' is implicitly declared.
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \bitwise
+
+2.2.2. Analyzing design hierarchy..
+Top module:  \bitwise
+Removing unused module `$abstract\bitwise'.
+Removed 1 unused modules.
+Module bitwise directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$bitwise.v:34$12 in module bitwise.
+Marked 3 switch rules as full_case in process $proc$bitwise.v:19$9 in module bitwise.
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 12 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\bitwise.$proc$bitwise.v:0$53'.
+  Set init value: $formal$bitwise.v:56$8_EN = 1'0
+Found init rule in `\bitwise.$proc$bitwise.v:0$51'.
+  Set init value: $formal$bitwise.v:53$7_EN = 1'0
+Found init rule in `\bitwise.$proc$bitwise.v:0$49'.
+  Set init value: $formal$bitwise.v:50$6_EN = 1'0
+Found init rule in `\bitwise.$proc$bitwise.v:0$47'.
+  Set init value: $formal$bitwise.v:47$5_EN = 1'0
+Found init rule in `\bitwise.$proc$bitwise.v:0$45'.
+  Set init value: $formal$bitwise.v:44$4_EN = 1'0
+Found init rule in `\bitwise.$proc$bitwise.v:0$43'.
+  Set init value: $formal$bitwise.v:34$3_EN = 1'0
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~6 debug messages>
+
+2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\bitwise.$proc$bitwise.v:0$53'.
+Creating decoders for process `\bitwise.$proc$bitwise.v:0$51'.
+Creating decoders for process `\bitwise.$proc$bitwise.v:0$49'.
+Creating decoders for process `\bitwise.$proc$bitwise.v:0$47'.
+Creating decoders for process `\bitwise.$proc$bitwise.v:0$45'.
+Creating decoders for process `\bitwise.$proc$bitwise.v:0$43'.
+Creating decoders for process `\bitwise.$proc$bitwise.v:34$12'.
+     1/8: $0$formal$bitwise.v:47$5_EN[0:0]$20
+     2/8: $0$formal$bitwise.v:47$5_CHECK[0:0]$19
+     3/8: $0$formal$bitwise.v:50$6_EN[0:0]$22
+     4/8: $0$formal$bitwise.v:50$6_CHECK[0:0]$21
+     5/8: $0$formal$bitwise.v:53$7_EN[0:0]$24
+     6/8: $0$formal$bitwise.v:53$7_CHECK[0:0]$23
+     7/8: $0$formal$bitwise.v:56$8_EN[0:0]$26
+     8/8: $0$formal$bitwise.v:56$8_CHECK[0:0]$25
+Creating decoders for process `\bitwise.$proc$bitwise.v:19$9'.
+     1/1: $0\q[7:0]
+
+2.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\bitwise.$past$bitwise.v:44$1$0' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$118' with positive edge clock.
+Creating register for signal `\bitwise.$past$bitwise.v:45$2$0' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$119' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:34$3_CHECK' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$120' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:34$3_EN' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$121' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:44$4_CHECK' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$122' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:44$4_EN' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$123' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:47$5_CHECK' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$124' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:47$5_EN' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$125' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:50$6_CHECK' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$126' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:50$6_EN' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$127' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:53$7_CHECK' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$128' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:53$7_EN' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$129' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:56$8_CHECK' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$130' with positive edge clock.
+Creating register for signal `\bitwise.$formal$bitwise.v:56$8_EN' using process `\bitwise.$proc$bitwise.v:34$12'.
+  created $dff cell `$procdff$131' with positive edge clock.
+Creating register for signal `\bitwise.\q' using process `\bitwise.$proc$bitwise.v:19$9'.
+  created $dff cell `$procdff$132' with positive edge clock.
+
+2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `bitwise.$proc$bitwise.v:0$53'.
+Removing empty process `bitwise.$proc$bitwise.v:0$51'.
+Removing empty process `bitwise.$proc$bitwise.v:0$49'.
+Removing empty process `bitwise.$proc$bitwise.v:0$47'.
+Removing empty process `bitwise.$proc$bitwise.v:0$45'.
+Removing empty process `bitwise.$proc$bitwise.v:0$43'.
+Found and cleaned up 3 empty switches in `\bitwise.$proc$bitwise.v:34$12'.
+Removing empty process `bitwise.$proc$bitwise.v:34$12'.
+Found and cleaned up 3 empty switches in `\bitwise.$proc$bitwise.v:19$9'.
+Removing empty process `bitwise.$proc$bitwise.v:19$9'.
+Cleaned up 6 empty switches.
+
+2.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module bitwise.
+
+2.4. Executing FUTURE pass.
+
+2.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module bitwise.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \bitwise..
+Removed 0 unused cells and 42 unused wires.
+<suppressed ~1 debug messages>
+
+2.7. Executing CHECK pass (checking for obvious problems).
+Checking module bitwise...
+Warning: Wire bitwise.\false is used but has no driver.
+Found and reported 1 problems.
+
+2.8. Executing OPT pass (performing simple optimizations).
+
+2.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module bitwise.
+
+2.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\bitwise'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+2.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \bitwise..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~9 debug messages>
+
+2.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \bitwise.
+Performed a total of 0 changes.
+
+2.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\bitwise'.
+Removed a total of 0 cells.
+
+2.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \bitwise..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+2.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module bitwise.
+
+2.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \bitwise..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~9 debug messages>
+
+2.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \bitwise.
+Performed a total of 0 changes.
+
+2.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\bitwise'.
+Removed a total of 0 cells.
+
+2.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \bitwise..
+
+2.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module bitwise.
+
+2.8.14. Finished OPT passes. (There is nothing left to do.)
+
+2.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 7 bits (of 8) from port B of cell bitwise.$le$bitwise.v:48$31 ($le).
+
+2.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \bitwise..
+
+2.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.12. Executing OPT pass (performing simple optimizations).
+
+2.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module bitwise.
+
+2.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\bitwise'.
+Removed a total of 0 cells.
+
+2.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \bitwise..
+
+2.12.4. Finished fast OPT passes.
+
+2.13. Printing statistics.
+
+=== bitwise ===
+
+   Number of wires:                 53
+   Number of wire bits:             88
+   Number of public wires:           8
+   Number of public wire bits:      22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $and                            1
+     $assert                         4
+     $assume                         2
+     $dff                           14
+     $eq                             2
+     $le                             4
+     $logic_and                      1
+     $mux                           21
+     $ne                             2
+     $not                            1
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module bitwise...
+Warning: Wire bitwise.\false is used but has no driver.
+Found and reported 1 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \bitwise
+
+3.2. Analyzing design hierarchy..
+Top module:  \bitwise
+Removed 0 unused modules.
+Module bitwise directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+Warnings: 2 unique messages, 3 total
+End of script. Logfile hash: 39deb389a7, CPU: user 0.04s system 0.03s, MEM: 6.50 MB peak
+Yosys 0.33+67 (git sha1 076c5ceb7, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 21% 6x opt_expr (0 sec), 19% 5x opt_clean (0 sec), ...

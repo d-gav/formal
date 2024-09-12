@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2024-05-10T01:13:04" hostname="c2s2-dev.ece.cornell.edu" package="blocking_with_spi" id="0" name="task2" tests="5" errors="0" failures="0" time="1" skipped="5">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="task2" name="build execution" time="0">
+</testcase>
+<testcase classname="task2" name="Property ASSERT in blocking_with_spi_configured at blocking_with_spi_configured.v:100.53-101.46" time="0" type="ASSERT" location="blocking_with_spi_configured.v:100.53-101.46" id="$assert$blocking_with_spi_configured.v:100$78">
+<skipped />
+</testcase>
+<testcase classname="task2" name="Property ASSERT in blocking_with_spi_configured at blocking_with_spi_configured.v:103.58-110.8" time="0" type="ASSERT" location="blocking_with_spi_configured.v:103.58-110.8" id="$assert$blocking_with_spi_configured.v:103$79">
+<skipped />
+</testcase>
+<testcase classname="task2" name="Property ASSERT in blocking_with_spi_configured at blocking_with_spi_configured.v:112.58-114.23" time="0" type="ASSERT" location="blocking_with_spi_configured.v:112.58-114.23" id="$assert$blocking_with_spi_configured.v:112$80">
+<skipped />
+</testcase>
+<testcase classname="task2" name="Property ASSERT in blocking_with_spi_configured at blocking_with_spi_configured.v:116.58-124.8" time="0" type="ASSERT" location="blocking_with_spi_configured.v:116.58-124.8" id="$assert$blocking_with_spi_configured.v:116$81">
+<skipped />
+</testcase>
+<testcase classname="task2" name="Property ASSERT in blocking_with_spi_configured at blocking_with_spi_configured.v:126.13-134.7" time="0" type="ASSERT" location="blocking_with_spi_configured.v:126.13-134.7" id="$assert$blocking_with_spi_configured.v:126$82">
+<skipped />
+</testcase>
+<system-out>SBY  1:13:03 [blocking_with_spi_task1] Removing directory '/home/eyl47/c2s2_2024/sp24demo/blocking_with_spi/blocking_with_spi_task1'.
+SBY  1:13:03 [blocking_with_spi_task2] Removing directory '/home/eyl47/c2s2_2024/sp24demo/blocking_with_spi/blocking_with_spi_task2'.
+SBY  1:13:03 [blocking_with_spi_task2] Copy '/home/eyl47/c2s2_2024/sp24demo/blocking_with_spi/blocking_with_spi_configured.v' to '/home/eyl47/c2s2_2024/sp24demo/blocking_with_spi/blocking_with_spi_task2/src/blocking_with_spi_configured.v'.
+SBY  1:13:03 [blocking_with_spi_task2] engine_0: smtbmc
+SBY  1:13:03 [blocking_with_spi_task2] base: starting process &quot;cd blocking_with_spi_task2/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  1:13:03 [blocking_with_spi_task2] base: finished (returncode=0)
+SBY  1:13:03 [blocking_with_spi_task2] prep: starting process &quot;cd blocking_with_spi_task2/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  1:13:03 [blocking_with_spi_task2] prep: finished (returncode=0)
+SBY  1:13:03 [blocking_with_spi_task2] smt2: starting process &quot;cd blocking_with_spi_task2/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  1:13:03 [blocking_with_spi_task2] smt2: finished (returncode=0)
+SBY  1:13:03 [blocking_with_spi_task2] engine_0: starting process &quot;cd blocking_with_spi_task2; yosys-smtbmc --presat --unroll -c --noprogress -t 100  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY  1:13:03 [blocking_with_spi_task2] engine_0: ##   0:00:00  Solver: yices
+SBY  1:13:04 [blocking_with_spi_task2] engine_0: ##   0:00:00  Status: passed
+SBY  1:13:04 [blocking_with_spi_task2] engine_0: finished (returncode=0)
+SBY  1:13:04 [blocking_with_spi_task2] engine_0: Status returned by engine: pass
+SBY  1:13:04 [blocking_with_spi_task2] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  1:13:04 [blocking_with_spi_task2] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY  1:13:04 [blocking_with_spi_task2] summary: engine_0 (smtbmc) returned pass
+SBY  1:13:04 [blocking_with_spi_task2] summary: engine_0 did not produce any traces
+SBY  1:13:04 [blocking_with_spi_task2] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

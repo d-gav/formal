@@ -1,0 +1,28 @@
+initial
+assume (= [$formal$bitwise.v:47$5_EN] false)
+assume (= [$formal$bitwise.v:50$6_EN] false)
+assume (= [$formal$bitwise.v:53$7_EN] false)
+assume (= [$formal$bitwise.v:56$8_EN] false)
+assume (= [_witness_.anyinit_procdff_118] true)
+assume (= [_witness_.anyinit_procdff_119] true)
+assume (= [_witness_.anyinit_procdff_124] false)
+assume (= [_witness_.anyinit_procdff_126] false)
+assume (= [_witness_.anyinit_procdff_128] false)
+assume (= [_witness_.anyinit_procdff_130] false)
+assume (= [q] #b10000000)
+
+state 0
+assume (= [clk] false)
+assume (= [d] false)
+assume (= [en] false)
+assume (= [load] #b00000000)
+assume (= [load_en] false)
+assume (= [reset] true)
+
+state 1
+assume (= [clk] false)
+assume (= [d] false)
+assume (= [en] false)
+assume (= [load] #b00000000)
+assume (= [load_en] false)
+assume (= [reset] false)
