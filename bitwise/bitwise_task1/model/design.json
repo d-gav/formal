@@ -9,6 +9,243 @@
         "name": "bitwise",
         "cell_sorts": [
           {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$36",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$39",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$42",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:38.13-38.20|bitwise.v:38.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$45",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$48",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:38.13-38.20|bitwise.v:38.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$51",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$54",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:41.13-41.26|bitwise.v:41.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$57",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:38.13-38.20|bitwise.v:38.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$60",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$63",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:41.13-41.26|bitwise.v:41.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$66",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:38.13-38.20|bitwise.v:38.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$69",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$72",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:41.13-41.26|bitwise.v:41.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$75",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:38.13-38.20|bitwise.v:38.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$78",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$81",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:41.13-41.26|bitwise.v:41.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$84",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:38.13-38.20|bitwise.v:38.9-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$87",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:35.7-35.12|bitwise.v:35.4-46.7"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$90",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:26.12-26.26|bitwise.v:26.8-31.6"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$93",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:23.12-23.19|bitwise.v:23.8-31.6"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$96",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "bitwise.v:20.7-20.12|bitwise.v:20.3-31.6"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
             "type": "$dff",
             "ports": [
                 {
@@ -29,9 +266,9 @@
             ],
             "cells": [
                 {
-                  "name": "$procdff$118",
+                  "name": "$procdff$100",
                   "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
+                    "src": "bitwise.v:34.3-47.6"
                   },
                   "parameters": {
                     "CLK_POLARITY": "1",
@@ -39,9 +276,9 @@
                   }
                 },
                 {
-                  "name": "$procdff$119",
+                  "name": "$procdff$101",
                   "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
+                    "src": "bitwise.v:34.3-47.6"
                   },
                   "parameters": {
                     "CLK_POLARITY": "1",
@@ -49,9 +286,9 @@
                   }
                 },
                 {
-                  "name": "$procdff$120",
+                  "name": "$procdff$102",
                   "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
+                    "src": "bitwise.v:34.3-47.6"
                   },
                   "parameters": {
                     "CLK_POLARITY": "1",
@@ -59,9 +296,9 @@
                   }
                 },
                 {
-                  "name": "$procdff$121",
+                  "name": "$procdff$103",
                   "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
+                    "src": "bitwise.v:34.3-47.6"
                   },
                   "parameters": {
                     "CLK_POLARITY": "1",
@@ -69,9 +306,9 @@
                   }
                 },
                 {
-                  "name": "$procdff$122",
+                  "name": "$procdff$104",
                   "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
+                    "src": "bitwise.v:34.3-47.6"
                   },
                   "parameters": {
                     "CLK_POLARITY": "1",
@@ -79,9 +316,9 @@
                   }
                 },
                 {
-                  "name": "$procdff$124",
+                  "name": "$procdff$105",
                   "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
+                    "src": "bitwise.v:34.3-47.6"
                   },
                   "parameters": {
                     "CLK_POLARITY": "1",
@@ -89,83 +326,33 @@
                   }
                 },
                 {
-                  "name": "$procdff$125",
-                  "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$126",
-                  "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$127",
-                  "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$128",
-                  "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$129",
-                  "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$130",
-                  "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$131",
-                  "attributes": {
-                    "src": "bitwise.v:34.3-70.6"
-                  },
-                  "parameters": {
-                    "CLK_POLARITY": "1",
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procdff$132",
+                  "name": "$procdff$106",
                   "attributes": {
                     "src": "bitwise.v:19.2-31.6"
                   },
                   "parameters": {
                     "CLK_POLARITY": "1",
                     "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$98",
+                  "attributes": {
+                    "src": "bitwise.v:34.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$99",
+                  "attributes": {
+                    "src": "bitwise.v:34.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
                   }
                 }
             ]
@@ -186,61 +373,13 @@
             ],
             "cells": [
                 {
-                  "name": "$not$bitwise.v:26$10",
+                  "name": "$not$bitwise.v:26$6",
                   "attributes": {
                     "src": "bitwise.v:26.12-26.20"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
                     "A_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$ne",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$ne$bitwise.v:44$27",
-                  "attributes": {
-                    "src": "bitwise.v:44.11-44.19"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$ne$bitwise.v:45$29",
-                  "attributes": {
-                    "src": "bitwise.v:45.11-45.19"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 }
@@ -267,7 +406,7 @@
             ],
             "cells": [
                 {
-                  "name": "$logic_and$bitwise.v:26$11",
+                  "name": "$logic_and$bitwise.v:26$7",
                   "attributes": {
                     "src": "bitwise.v:26.12-26.26"
                   },
@@ -282,244 +421,7 @@
             ]
           },
           {
-            "type": "$mux",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "S",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "Y",
-                  "direction": "",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$procmux$101",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:53.13-53.26|bitwise.v:53.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$104",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:50.13-50.20|bitwise.v:50.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$107",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$110",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:26.12-26.26|bitwise.v:26.8-31.6"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procmux$113",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:23.12-23.19|bitwise.v:23.8-31.6"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procmux$116",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:20.7-20.12|bitwise.v:20.3-31.6"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000001000"
-                  }
-                },
-                {
-                  "name": "$procmux$56",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$59",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$62",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:50.13-50.20|bitwise.v:50.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$65",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$68",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:50.13-50.20|bitwise.v:50.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$71",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$74",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:53.13-53.26|bitwise.v:53.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$77",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:50.13-50.20|bitwise.v:50.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$80",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$83",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:53.13-53.26|bitwise.v:53.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$86",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:50.13-50.20|bitwise.v:50.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$89",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$92",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:53.13-53.26|bitwise.v:53.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$95",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:50.13-50.20|bitwise.v:50.9-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$procmux$98",
-                  "attributes": {
-                    "full_case": "00000000000000000000000000000001",
-                    "src": "bitwise.v:47.7-47.12|bitwise.v:47.4-58.7"
-                  },
-                  "parameters": {
-                    "WIDTH": "00000000000000000000000000000001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$le",
+            "type": "$logic_not",
             "ports": [
                 {
                   "name": "A",
@@ -527,11 +429,6 @@
                   "range": [8, 0]
                 },
                 {
-                  "name": "B",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
                   "name": "Y",
                   "direction": "",
                   "range": [0, 0]
@@ -539,54 +436,13 @@
             ],
             "cells": [
                 {
-                  "name": "$le$bitwise.v:48$31",
+                  "name": "$eq$bitwise.v:36$17",
                   "attributes": {
-                    "src": "bitwise.v:48.12-48.42"
+                    "src": "bitwise.v:36.12-36.42"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
                     "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$le$bitwise.v:51$32",
-                  "attributes": {
-                    "src": "bitwise.v:51.12-51.21"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$le$bitwise.v:54$35",
-                  "attributes": {
-                    "src": "bitwise.v:54.12-54.38"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
-                    "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                },
-                {
-                  "name": "$le$bitwise.v:57$36",
-                  "attributes": {
-                    "src": "bitwise.v:57.12-57.18"
-                  },
-                  "parameters": {
-                    "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000001000",
-                    "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000001000",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 }
@@ -598,12 +454,12 @@
                 {
                   "name": "A",
                   "direction": "io",
-                  "range": [0, 0]
+                  "range": [8, 0]
                 },
                 {
                   "name": "B",
                   "direction": "io",
-                  "range": [0, 0]
+                  "range": [8, 0]
                 },
                 {
                   "name": "Y",
@@ -613,64 +469,29 @@
             ],
             "cells": [
                 {
-                  "name": "$eq$bitwise.v:44$28",
+                  "name": "$eq$bitwise.v:39$18",
                   "attributes": {
-                    "src": "bitwise.v:44.11-44.32"
+                    "src": "bitwise.v:39.12-39.21"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
+                    "A_WIDTH": "00000000000000000000000000001000",
                     "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
+                    "B_WIDTH": "00000000000000000000000000001000",
                     "Y_WIDTH": "00000000000000000000000000000001"
                   }
                 },
                 {
-                  "name": "$eq$bitwise.v:45$30",
+                  "name": "$eq$bitwise.v:42$21",
                   "attributes": {
-                    "src": "bitwise.v:45.11-45.37"
+                    "src": "bitwise.v:42.12-42.38"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
-                    "A_WIDTH": "00000000000000000000000000000001",
+                    "A_WIDTH": "00000000000000000000000000001000",
                     "B_SIGNED": "00000000000000000000000000000000",
-                    "B_WIDTH": "00000000000000000000000000000001",
+                    "B_WIDTH": "00000000000000000000000000001000",
                     "Y_WIDTH": "00000000000000000000000000000001"
-                  }
-                }
-            ]
-          },
-          {
-            "type": "$assume",
-            "ports": [
-                {
-                  "name": "A",
-                  "direction": "io",
-                  "range": [0, 0]
-                },
-                {
-                  "name": "EN",
-                  "direction": "io",
-                  "range": [0, 0]
-                }
-            ],
-            "cells": [
-                {
-                  "name": "$assume$bitwise.v:34$37",
-                  "attributes": {
-                    "src": "bitwise.v:34.29-44.33"
-                  },
-                  "parameters": {
-
-                  }
-                },
-                {
-                  "name": "$assume$bitwise.v:44$38",
-                  "attributes": {
-                    "src": "bitwise.v:44.34-45.38"
-                  },
-                  "parameters": {
-
                   }
                 }
             ]
@@ -691,36 +512,36 @@
             ],
             "cells": [
                 {
-                  "name": "$assert$bitwise.v:47$39",
+                  "name": "$assert$bitwise.v:35$23",
                   "attributes": {
-                    "src": "bitwise.v:47.19-48.43"
+                    "src": "bitwise.v:35.19-36.43"
                   },
                   "parameters": {
 
                   }
                 },
                 {
-                  "name": "$assert$bitwise.v:50$40",
+                  "name": "$assert$bitwise.v:38$24",
                   "attributes": {
-                    "src": "bitwise.v:50.27-51.22"
+                    "src": "bitwise.v:38.27-39.22"
                   },
                   "parameters": {
 
                   }
                 },
                 {
-                  "name": "$assert$bitwise.v:53$41",
+                  "name": "$assert$bitwise.v:41$25",
                   "attributes": {
-                    "src": "bitwise.v:53.33-54.39"
+                    "src": "bitwise.v:41.33-42.39"
                   },
                   "parameters": {
 
                   }
                 },
                 {
-                  "name": "$assert$bitwise.v:56$42",
+                  "name": "$assert$bitwise.v:44$26",
                   "attributes": {
-                    "src": "bitwise.v:56.14-57.19"
+                    "src": "bitwise.v:44.14-45.19"
                   },
                   "parameters": {
 
@@ -749,9 +570,9 @@
             ],
             "cells": [
                 {
-                  "name": "$and$bitwise.v:53$34",
+                  "name": "$and$bitwise.v:41$20",
                   "attributes": {
-                    "src": "bitwise.v:53.13-53.26"
+                    "src": "bitwise.v:41.13-41.26"
                   },
                   "parameters": {
                     "A_SIGNED": "00000000000000000000000000000000",
@@ -769,7 +590,7 @@
             "hdlname": "\\bitwise",
             "dynports": "00000000000000000000000000000001",
             "top": "00000000000000000000000000000001",
-            "src": "bitwise.v:1.1-72.10"
+            "src": "bitwise.v:1.1-49.10"
         }
       }
   ]

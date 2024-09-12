@@ -5,32 +5,29 @@
     {"path": ["\\clk"], "edge": "posedge", "offset": 0}
   ],
   "signals": [
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_137"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_139"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_141"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_143"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_145"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_147"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_149"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_151"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_153"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_109"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_111"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_113"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_115"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_117"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_119"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_121"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_123"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_533_execute_125"], "width": 1, "offset": 0, "init_only": false},
     {"path": ["\\clk"], "width": 1, "offset": 0, "init_only": false},
     {"path": ["\\d"], "width": 1, "offset": 0, "init_only": false},
     {"path": ["\\en"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\false"], "width": 1, "offset": 0, "init_only": false},
     {"path": ["\\load"], "width": 8, "offset": 0, "init_only": false},
     {"path": ["\\load_en"], "width": 1, "offset": 0, "init_only": false},
     {"path": ["\\reset"], "width": 1, "offset": 0, "init_only": false},
-    {"path": ["\\_witness_", "\\anyinit_procdff_118"], "width": 1, "offset": 0, "init_only": true},
-    {"path": ["\\_witness_", "\\anyinit_procdff_119"], "width": 1, "offset": 0, "init_only": true},
-    {"path": ["\\_witness_", "\\anyinit_procdff_124"], "width": 1, "offset": 0, "init_only": true},
-    {"path": ["\\_witness_", "\\anyinit_procdff_126"], "width": 1, "offset": 0, "init_only": true},
-    {"path": ["\\_witness_", "\\anyinit_procdff_128"], "width": 1, "offset": 0, "init_only": true},
-    {"path": ["\\_witness_", "\\anyinit_procdff_130"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_100"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_102"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_104"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_98"], "width": 1, "offset": 0, "init_only": true},
     {"path": ["\\q"], "width": 8, "offset": 0, "init_only": true}
   ],
   "steps": [
-    {"bits": "1000000000001110000000001000000000100"},
-    {"bits": "00000000000000000000000"}
+    {"bits": "1000000000000000000000100001000000"},
+    {"bits": "0000000000000000000000"}
   ]
 }

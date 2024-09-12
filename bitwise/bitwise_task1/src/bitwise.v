@@ -32,41 +32,18 @@ module bitwise (
 
 	`ifdef FORMAL
 		always@(posedge clk) begin
-			/*
-			-----
-			Demo!
-			-----
-			assume(en == 0);
-			assume(load_en == 0);
-			assume(d == 1);
-			*/
-			
-			assume($changed(en) == false);
-			assume($changed(load_en) == false);
-
 			if(reset) begin
-				assert(q <= {p_nbits {p_reset_value}});
+				assert(q == {p_nbits {p_reset_value}});
 			end
 			else if (load_en) begin
-				assert(q <= load);
+				assert(q == load);
 			end
 			else if (~load_en & en) begin
-				assert(q <= {q[p_nbits - 2:0], d});
+				assert(q == {q[p_nbits - 2:0], d});
 			end
 			else begin
-				assert(q <= q);
+				assert(q == q);
 			end
-			
-			/*
-			if($rose(en) && ~load_en) begin
-				assert(q <= {q[p_nbits - 2:0], d});
-			end
-			else if($fell(en) && ~load_en) begin
-				assert(q <= q);
-			end*/
-
-
-
 		end
 	`endif
 endmodule

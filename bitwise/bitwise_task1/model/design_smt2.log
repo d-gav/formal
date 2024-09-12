@@ -45,25 +45,24 @@ Module bitwise directly or indirectly contains formal properties -> setting "kee
 
 === bitwise ===
 
-   Number of wires:                 60
-   Number of wire bits:             95
-   Number of public wires:          23
-   Number of public wire bits:      37
+   Number of wires:                 52
+   Number of wire bits:             87
+   Number of public wires:          20
+   Number of public wire bits:      34
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 61
+   Number of cells:                 51
      $and                            1
-     $anyinit                        7
-     $anyseq                        10
+     $anyinit                        5
+     $anyseq                         9
      $assert                         4
-     $assume                         3
+     $assume                         1
      $eq                             2
      $ff                             4
-     $le                             4
      $logic_and                      1
+     $logic_not                      1
      $mux                           21
-     $ne                             2
      $not                            2
 
 6. Executing SMT2 backend.
@@ -73,6 +72,6 @@ Module bitwise directly or indirectly contains formal properties -> setting "kee
 6.2. Executing DEMUXMAP pass.
 Creating SMT-LIBv2 representation of module bitwise.
 
-End of script. Logfile hash: a6b14c2e73, CPU: user 0.02s system 0.03s, MEM: 5.31 MB peak
+End of script. Logfile hash: c3b1573d41, CPU: user 0.01s system 0.01s, MEM: 11.11 MB peak
 Yosys 0.33+67 (git sha1 076c5ceb7, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 48% 2x write_smt2 (0 sec), 35% 2x read_ilang (0 sec), ...
+Time spent: 61% 2x write_smt2 (0 sec), 23% 2x read_ilang (0 sec), ...

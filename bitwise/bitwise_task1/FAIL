@@ -2,4 +2,4 @@ Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
 Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
 engine_0 (smtbmc) returned FAIL
 counterexample trace: engine_0/trace.vcd
-  failed assertion bitwise.$assert$bitwise.v:47$39 at bitwise.v:47.19-48.43 in step 1
+  failed assertion bitwise.$assert$bitwise.v:41$25 at bitwise.v:41.33-42.39 in step 1
